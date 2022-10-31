@@ -1,0 +1,48 @@
+:root{
+    --text-color:#fdfdfd;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #4b4b4b;
+    color: var(--text-color);
+    height: 100%;
+}
+
+h2{
+    font-size: 36pt;
+}
+
+h3{
+    font-size: 26pt;
+}
+
+
+
+p{
+    font-size: 20pt;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+}
+
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+body #logo{
+    width: 363px;
+    height: 113px;
+}

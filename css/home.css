@@ -1,0 +1,45 @@
+#home main a{
+    background-color: #d20000;
+    border-radius: 25px  ;
+    border: none;
+    width: 440px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home main a:hover{
+    background-color: #ff0000;
+}
+
+#home main{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contet-left h3{
+    margin-left: 20px;
+}
+
+#content-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 60vh;
+}
+
+
+#catalogo {
+    max-width: 700px;
+    width: 100%;
+    height: auto;
+}
+#home .icones{
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}

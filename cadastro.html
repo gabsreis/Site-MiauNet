@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MiauNet</title>
+        
+        <link rel = "preconnect" href = "https://fonts.googleapis.com">
+        <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+        <link href = "https: //fonts.googleapis.com/css2? family = Ubuntu: wght @ 300 & display = swap "rel =" stylesheet ">
+        
+        <link rel="stylesheet" href="/MiauNet/css/all.css">
+        <link rel="stylesheet" href="/MiauNet/css/home.css">
+        <link rel="stylesheet" href="/MiauNet/css/cadastro.css">
+        
+        <link rel="shortcut icon" href="/MiauNet/images/MiauNet.png" type="image/x-icon">
+    </head>
+    <body>
+        <div id="home">
+            <header>
+                <img id="logo" src="/MiauNet/images/LogoMiauNet.png" alt="Logomarca">
+                <a id="botao-pesquisa" href="#">
+                    <img class="icones" src="/MiauNet/images/IconePesquisa.png" alt="IconePesquisa">
+                    <h3>Pesquise uma obra</h3>
+                </a>
+            </header>
+            <main>
+                    <div id="content-left">
+                        <form action="">
+                            <h1></h1>
+                            <fieldset>
+                                <legend>
+                                    <h2>Dados de uma Obra</h2>
+                                </legend>
+                                <div class="field">
+                                    <label for="titulo">Título:</label>
+                                    <input id="titulo" type="text" name="titulo">
+                                </div>
+                                <div class="field-group">
+                                    <div class="field">
+                                        <label for="tipo">Tipo:</label>
+                                        <select id="tipo" name="tipo">
+                                            <option value="">Selecione o tipo da obra</option>
+                                            <option value="Filme">Filme</option>
+                                            <option value="Seriado">Seriado</option>
+                                        </select>    
+                                    </div>
+                                    <div class="field">
+                                        <label for="genero">Gênero:</label>
+                                        <select id="genero" name="genero">
+                                        <option value="">Selecione o gênero da obra</option>
+                                            <option value="Ação">Ação</option>
+                                            <option value="Animação">Animação</option>
+                                            <option value="Aventura">Aventura</option>
+                                            <option value="Comédia">Comédia</option>
+                                            <option value="Crime">Crime</option>
+                                            <option value="Documentário">Documentário</option>
+                                            <option value="Drama">Drama</option>
+                                            <option value="Família">Família</option>
+                                            <option value="Ficção científica">Ficção científica</option>
+                                            <option value="Guerra">Guerra</option>
+                                            <option value="Mistério">Mistério</option>
+                                            <option value="Romance">Romance</option>
+                                            <option value="Suspence">Suspence</option>    
+                                            <option value="Terror">Terror</option>
+                                        </select>    
+                                    </div>
+                                    <div id="field-duracao" class="field">
+                                        <label for="duracao">Duração:</label>
+                                        <input id="duracao" type="text" name="duracao">
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <button id="botao-funcionalidade" onclick="cadastrarObra(event);">
+                                <h3></h3>
+                            </button>
+                        </form>
+                        <a  href="index.html">
+                            <img class="icones" src="/MiauNet/images/icone input.png" alt="IconeInput">
+                            <h3>Voltar para home</h3>
+                        </a> 
+                    </div>
+                    <div id="content-right">
+                        <section id="area-cartaz">
+                            <p>Aqui vai ficar o upload da foto de cartaz</p>
+                            <input type="file" id="upload" accept="image/*">
+                            <img id="cartaz" src="" alt="Imagem de Cartaz">
+                        </section>
+                        <section id="area-listagem"></section>
+                    </div>    
+            </main>
+            <footer>
+            </footer>
+        </div>
+        <script src="/MiauNet/codes/cadastro.js"></script>
+    </body>
+</html>
